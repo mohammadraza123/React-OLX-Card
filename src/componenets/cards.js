@@ -9,16 +9,16 @@ function BasicExample(props) {
     
     <div id="olx_card">
 
-      <Card  class="how" style={{ width: '18rem' }} >
-      <Card.Img variant="top" src = "olx1.jpeg"/>
+     <Card  class="how" style={{ width: '18rem' }} >
+      <Card.Img variant="top" src = {props.imgsrc}/>
       <Card.Body>
-        <Card.Title>Featured</Card.Title>
+        {props.featured && <Card.Title>Featured</Card.Title>}
         <Card.Text>
-          Mehran Car
+          {props.title}
 <AiOutlineHeart  id="icon"/>
  </Card.Text>
-        <h5>Rs 5,70000</h5>
-        <p>Port Qasim, Karachi . 5 days ago</p>
+        <h5>{props.rs}</h5>
+        <p>{props.address}</p>
       </Card.Body>
     </Card>
     </div>
