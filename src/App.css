@@ -26,12 +26,18 @@
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-around;
+  width: 70%;
 }
 #icon{
-  width: 2rem !important;
-  height: 2rem !important;
-  margin-left: 140px !important;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  margin-left: 80% !important;
+  margin-top: -20% !important;
+
 }
 .card-body{
 border-left: 5px solid orange;
+}
+.card-text{
+  height: 30px;
 }
